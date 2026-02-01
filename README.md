@@ -19,7 +19,7 @@ This project was built as part of a **Python Developer hiring assignment**.
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 trading-bot/
@@ -42,16 +42,16 @@ trading-bot/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 1️⃣ Prerequisites
+### Prerequisites
 
 * Python **3.8+**
 * Binance Futures **Testnet** account
 
 ---
 
-### 2️⃣ Clone Repository
+### Clone Repository
 
 ```bash
 git clone <your-github-repo-url>
@@ -60,7 +60,7 @@ cd trading-bot
 
 ---
 
-### 3️⃣ Create & Activate Virtual Environment
+### Create & Activate Virtual Environment
 
 **Windows (PowerShell):**
 
@@ -71,7 +71,7 @@ python -m venv venv
 
 ---
 
-### 4️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -79,7 +79,7 @@ pip install -r requirements.txt
 
 ---
 
-### 5️⃣ Configure API Credentials
+### Configure API Credentials
 
 Create a `.env` file in the project root:
 
@@ -96,21 +96,21 @@ https://testnet.binancefuture.com
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
-### 🔹 MARKET Order
+### MARKET Order
 
 ```bash
 python -m bot.cli --symbol BTCUSDT --side BUY --type MARKET --qty 0.003
 ```
 
-### 🔹 LIMIT Order
+### LIMIT Order
 
 ```bash
 python -m bot.cli --symbol BTCUSDT --side SELL --type LIMIT --qty 0.003 --price 90000
 ```
 
-### 🔹 BONUS: STOP_MARKET Order (Stop-Loss)
+### BONUS: STOP_MARKET Order (Stop-Loss)
 
 ```bash
 python -m bot.cli --symbol BTCUSDT --side SELL --type STOP_MARKET --qty 0.003 --stop-price 40000
@@ -120,7 +120,7 @@ python -m bot.cli --symbol BTCUSDT --side SELL --type STOP_MARKET --qty 0.003 --
 
 ---
 
-## 📤 Sample Output
+## Sample Output
 
 ```
 Order Placed Successfully
@@ -137,7 +137,7 @@ Average Price : 0.000
 
 ---
 
-## 📄 Logging
+## Logging
 
 All API requests, responses, and errors are logged to:
 
@@ -160,7 +160,7 @@ INFO | Order response: {...}
 
 ---
 
-## ⚠️ Error Handling
+## Error Handling
 
 * Invalid CLI inputs are validated
 * API errors (e.g., minimum notional violations) are caught and logged
@@ -168,7 +168,7 @@ INFO | Order response: {...}
 
 ---
 
-## 📌 Assumptions
+## Assumptions
 
 * Orders are placed on **Binance Futures Testnet (USDT-M)** only
 * Default leverage and margin settings are used
@@ -177,7 +177,7 @@ INFO | Order response: {...}
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 * Python 3.x
 * python-binance
@@ -187,21 +187,18 @@ INFO | Order response: {...}
 
 ---
 
-## ✅ Assignment Coverage
+## Assignment Coverage
 
 | Requirement              | Status     |
 | ------------------------ | ---------- |
-| MARKET & LIMIT orders    | ✅ Complete |
-| BUY & SELL support       | ✅ Complete |
-| CLI input validation     | ✅ Complete |
-| Structured code          | ✅ Complete |
-| Logging & error handling | ✅ Complete |
-| Testnet integration      | ✅ Complete |
-| BONUS: STOP_MARKET order | ✅ Complete |
-| Required log files       | ✅ Complete |
+| MARKET & LIMIT orders    |  Complete |
+| BUY & SELL support       |  Complete |
+| CLI input validation     |  Complete |
+| Structured code          |  Complete |
+| Logging & error handling |  Complete |
+| Testnet integration      |  Complete |
+| BONUS: STOP_MARKET order |  Complete |
+| Required log files       |  Complete |
 
 ---
 
-## 👤 Author
-
-**Shubham**

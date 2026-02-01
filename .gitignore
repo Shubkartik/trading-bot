@@ -13,3 +13,7 @@ logs/
 
 # VSCode
 .vscode/
+
+# Allow setting
+!submission_logs/
+!submission_logs/*.log
